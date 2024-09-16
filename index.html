@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Try to Stay is a strategic board game where players aim to outlast their opponents by rolling dice and navigating the board.">
+    <title>Try to Stay - Instructions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            overflow-y: auto;
+            max-height: 90vh;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #2a9d8f;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        h2,
+        h3 {
+            color: #2a9d8f;
+            font-size: 1.6em;
+            border-bottom: 3px solid #2a9d8f;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p,
+        ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        ul li:hover {
+            background: #e0e0e0;
+            transform: scale(1.02);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #2a9d8f;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 1.2em;
+            color: #2a9d8f;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #2a9d8f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .point-tracker {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .point-tracker img {
+            max-width: 80px;
+            border-radius: 50%;
+            border: 4px solid #FFD700;
+        }
+
+        .point-tracker .points {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .point-tracker .points div {
+            display: flex;
+        }
+
+        .point-tracker .points span {
+            width: 14px;
+            height: 14px;
+            border-radius: 40px;
+            margin: 1px;
+            display: inline-block;
+        }
+
+        .ejected-example {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+            /* Add this to position the flag relative to this container */
+        }
+
+        .ejected-example img {
+            width: 80px;
+            /* Match the desired width */
+            border-radius: 50%;
+            border: 4px solid #FFD700;
+        }
+
+        .ejected-example .flag {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 85px;
+            /* Match the image width */
+            height: 22px;
+            background: black;
+            color: white;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            z-index: 1;
+        }
+
+        .ejected-example img {
+            position: relative;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Try to Stay - Instructions</h1>
+
+        <div class="section overview">
+            <h2>Overview</h2>
+            <p><strong>Try to Stay</strong> is a board game for 2-4 players. Roll the dice to move around the board and earn points. Each player’s zone matches their color but does not earn points until customized. To customize, press the "Customize" button
+                and choose an opponent’s color. Once customized, your zone will earn points when landing on both your customized zone and the opponent’s zones. Avoid purple zones that cost points. The winner is the last player remaining who hasn’t been
+                kicked out of the game.</p>
+        </div>
+
+        <div class="section gameplay">
+            <h2>How to Play</h2>
+            <ul>
+                <li><strong>Roll the Dice:</strong> Move based on the dice roll. Use your moves strategically to earn points and avoid pitfalls.</li>
+                <li><strong>Earn Points:</strong> Land on an opponent’s colored zone to earn points from them.</li>
+                <li><strong>Customize Your Zone:</strong> Land on your own zone and press "Customize" to change its color to an opponent’s color. Your zone will then earn points when landing on both your customized zone and the opponent’s zones.</li>
+                <li><strong>Avoid Purple Zones:</strong> There are two purple zones on the board. Landing on these will cost you points.</li>
+            </ul>
+        </div>
+
+        <div class="section winning">
+            <h2>Winning the Game</h2>
+            <ul>
+                <li><strong>Eliminate Opponents:</strong> Collect 5 points from a single opponent to eliminate them. The eliminated player will be marked as "Ejected" and cannot continue. Shown in the format below:</li>
+                <div class="section ejected-example">
+                    <div class="ejected-example">
+                        <img src="https://plus.unsplash.com/premium_vector-1718630786470-6265deb1ea90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Ejected Player">
+                        <div class="flag">Ejected</div>
+                    </div>
+                </div>
+
+                <li><strong>Be the Last Player Standing:</strong> The game continues until only one player remains who hasn’t been eliminated. This player is the winner!</li>
+            </ul>
+        </div>
+
+        <div class="section special-features">
+            <h2>Special Features</h2>
+            <ul>
+                <li><strong>Point Tracker:</strong> Your points are tracked with colors displayed in rows. Each row represents the points you’ve gained from landing on opponent zones or your customized zone, shown in the format below:</li>
+            </ul>
+            <div class="point-tracker">
+                <div class="points">
+                    <div>
+                        <span style="background-color: #0000FF;"></span>
+                        <span style="background-color: #0000FF;"></span>
+                        <span style="background-color: #0000FF;"></span>
+                    </div>
+                    <div>
+                        <span style="background-color: #FF0000;"></span>
+                        <span style="background-color: #FF0000;"></span>
+                        <span style="background-color: #FF0000;"></span>
+                        <span style="background-color: #FF0000;"></span>
+                        <span style="background-color: #FF0000;"></span>
+                    </div>
+                    <div>
+                        <span style="background-color: #00FF00;"></span>
+                        <span style="background-color: #00FF00;"></span>
+                    </div>
+                </div>
+                <img src="https://plus.unsplash.com/premium_vector-1718630786470-6265deb1ea90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D" alt="Player Avatar">
+            </div>
+            <ul>
+                <li><strong>Red Cards:</strong> Earn red cards by eliminating opponents. The player with the most red cards leads the leaderboard.</li>
+                <li><strong>Chat and Compete:</strong> Enjoy real-time chat with other players while you strategize and compete.</li>
+            </ul>
+        </div>
+
+
+
+        <footer class="footer">
+            <a href="https://play.google.com/store/apps/details?id=com.monaalazzani.trytostay&pcampaignid=web_share" target="_blank">Rate Us on Play Store</a>
+        </footer>
+    </div>
+</body>
+
+</html>
