@@ -32,7 +32,7 @@
         }
 
         h1 {
-            color: #2a9d8f;
+            color: #64048a;
             font-size: 2.5em;
             text-align: center;
             margin-bottom: 20px;
@@ -41,9 +41,9 @@
 
         h2,
         h3 {
-            color: #2a9d8f;
+            color: #64048a;
             font-size: 1.6em;
-            border-bottom: 3px solid #2a9d8f;
+            border-bottom: 3px solid #64048a;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -78,19 +78,19 @@
         }
 
         .highlight {
-            color: #2a9d8f;
+            color: #64048a;
             font-weight: bold;
         }
 
         .footer {
             text-align: center;
             font-size: 1.2em;
-            color: #2a9d8f;
+            color: #64048a;
             margin-top: 20px;
         }
 
         .footer a {
-            color: #2a9d8f;
+            color: #64048a;
             text-decoration: none;
             font-weight: bold;
         }
@@ -132,12 +132,10 @@
             align-items: center;
             margin-top: 20px;
             position: relative;
-            /* Add this to position the flag relative to this container */
         }
 
         .ejected-example img {
             width: 80px;
-            /* Match the desired width */
             border-radius: 50%;
             border: 4px solid #FFD700;
         }
@@ -147,7 +145,6 @@
             top: 50%;
             left: 50%;
             width: 85px;
-            /* Match the image width */
             height: 22px;
             background: black;
             color: white;
@@ -170,21 +167,23 @@
 
 <body>
     <div class="container">
-        <h1>Try to Stay - Instructions</h1>
+        <h1 style="text-align: center; margin-bottom: 5px;">Try to Stay</h1>
+        <h2 style="text-align: center; color: grey; font-size: 1.3em; margin-top: 0; border: none;">Gameplay Guide</h2>
+
 
         <div class="section overview">
-            <h2>Overview</h2>
-            <p><strong>Try to Stay</strong> is a board game for 2-4 players. Roll the dice to move around the board and earn points. Each player’s zone matches their color but does not earn points until customized. To customize, press the "Customize" button
-                and choose an opponent’s color. Once customized, your zone will earn points when landing on both your customized zone and the opponent’s zones. Avoid purple zones that cost points. The winner is the last player remaining who hasn’t been
-                kicked out of the game.</p>
+            <h2>Brief </h2>
+            <p>Redefine Fun with a Modern Board Game Featuring Unique Rules and Design!</p>
         </div>
 
         <div class="section gameplay">
             <h2>How to Play</h2>
             <ul>
-                <li><strong>Roll the Dice:</strong> Move based on the dice roll. Use your moves strategically to earn points and avoid pitfalls.</li>
+                <li><strong>Your zone:</strong> Each player has their own zone, and the zone color matches the player's color.</li>
+                <li><strong>Roll the Dice:</strong> Roll the dice to determine your moves on the board.</li>
                 <li><strong>Earn Points:</strong> Land on an opponent’s colored zone to earn points from them.</li>
-                <li><strong>Customize Your Zone:</strong> Land on your own zone and press "Customize" to change its color to an opponent’s color. Your zone will then earn points when landing on both your customized zone and the opponent’s zones.</li>
+                <li><strong>Boost Your Zone:</strong> If you land on your zone, you won’t earn any points unless you boost your zone. Press the "Boost" button to choose an opponent’s color. Once boosted, your zone will have borders in the chosen opponent’s
+                    color, visually confirming the boost's success. You’ll then earn points in the chosen opponent’s color when landing on your boosted zone.</li>
                 <li><strong>Avoid Purple Zones:</strong> There are two purple zones on the board. Landing on these will cost you points.</li>
             </ul>
         </div>
@@ -207,7 +206,7 @@
         <div class="section special-features">
             <h2>Special Features</h2>
             <ul>
-                <li><strong>Point Tracker:</strong> Your points are tracked with colors displayed in rows. Each row represents the points you’ve gained from landing on opponent zones or your customized zone, shown in the format below:</li>
+                <li><strong>Point Tracker:</strong> Your points are tracked with colors displayed in rows. Each row represents the points you’ve gained from landing on opponent zones or your boosted zone, shown in the format below:</li>
             </ul>
             <div class="point-tracker">
                 <div class="points">
@@ -232,11 +231,11 @@
             </div>
             <ul>
                 <li><strong>Red Cards:</strong> Earn red cards by eliminating opponents. The player with the most red cards leads the leaderboard.</li>
+                <li><strong>Movement Tracker:</strong> When it’s your turn, 6 potential zones are displayed on the board to show the possible zones you could land on after rolling the dice.</li>
+                <li><strong>Reroll Dice:</strong> If you’re not satisfied with your dice roll, you can choose to reroll for a better outcome.</li>
                 <li><strong>Chat and Compete:</strong> Enjoy real-time chat with other players while you strategize and compete.</li>
             </ul>
         </div>
-
-
 
         <footer class="footer">
             <a href="https://play.google.com/store/apps/details?id=com.monaalazzani.trytostay&pcampaignid=web_share" target="_blank">Rate Us on Play Store</a>
